@@ -1,0 +1,149 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hey", "Hello", "Good morning", "Good evening", "How are you?", "Anyone here?", "Yo"],
+      "responses": ["Hello! 👋 How can I assist you with your college queries?", "Hi there! What can I do for you today?", "Welcome back!"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you later", "Catch you later", "Talk to you soon"],
+      "responses": ["Goodbye! Stay focused on your goals!", "All the best, see you next time!", "Take care!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank you so much", "Appreciate it"],
+      "responses": ["You're welcome!", "Happy to help 😊", "Any time!"]
+    },
+    {
+      "tag": "hod_info",
+      "patterns": ["Who is the HOD?", "Who is head of department?", "Department head", "Head of CSD", "HOD of CSD"],
+      "responses": ["The Head of the Computer Science & Data Science (CSD) Department is Mr. Syed Mushtaq Ali."]
+    },
+    {
+      "tag": "faculty_subject",
+      "patterns": ["Who teaches Python?", "Faculty for Machine Learning", "Who teaches Deep Learning?", "Teacher for Data Structures", "Which professor teaches Statistics?"],
+      "responses": ["Let me check. Please provide the subject name for accurate faculty information."]
+    },
+    {
+      "tag": "faculty_info",
+      "patterns": ["List of faculty", "CSD faculty", "Who are the teachers?", "Faculty emails", "Faculty names in CSD department"],
+      "responses": ["The CSD department has experienced faculty including Dr. Sarah Johnson, Dr. Rajesh Kumar, Prof. Priya Sharma, Dr. Amit Patel, and more. Ask about a subject to know who teaches it."]
+    },
+    {
+      "tag": "subject_info",
+      "patterns": ["Subjects in 5th semester", "What are the courses?", "Which subjects do we study?", "Subjects taught this semester", "Semester 5 course list"],
+      "responses": ["Subjects include Software Engineering, Artificial Intelligence, Full Stack Web Development, Computer Networks, and Managerial Communication. Labs are also included."]
+    },
+    {
+      "tag": "subject_credits",
+      "patterns": ["Credits for AI", "How many credits is FSWD?", "Subject-wise credits", "Credits for each subject"],
+      "responses": ["Most subjects are 3 or 4 credits. For example, Software Engineering is 3 credits, while FSWD Lab is 1.5 credits."]
+    },
+    {
+      "tag": "classroom_info",
+      "patterns": ["Where is my class?", "What is the classroom?", "Room number for section A", "Room for my section"],
+      "responses": ["Please mention your section (A, B, or C) so I can give you your classroom info."]
+    },
+    {
+      "tag": "room_number",
+      "patterns": ["Section A room", "Room number for B", "CSD C class location"],
+      "responses": ["Section A: Room 312\nSection B: Room 313\nSection C: Room 309"]
+    },
+    {
+      "tag": "timetable",
+      "patterns": ["Show my timetable", "What is my schedule today?", "CSD A timetable", "When do I have FSWD?", "Friday schedule"],
+      "responses": ["Please mention your section (A, B, or C) to get the detailed timetable."]
+    },
+    {
+      "tag": "academic_calendar",
+      "patterns": ["When is orientation?", "Mid exam date?", "When are practicals?", "Academic events", "CIA dates", "Exams schedule", "College holidays"],
+      "responses": ["Please wait while I fetch your academic calendar... You can ask things like 'When is CIE-1?' or 'When does class start?'. I'm here to help."]
+    },
+    {
+      "tag": "cie_dates",
+      "patterns": ["When is CIE 1?", "When is internal exam?", "Mid-term test dates", "Internal marks test", "CIA schedule"],
+      "responses": ["CIE-1 is from 08-09-2025 to 10-09-2025\nCIE-2 is from 06-11-2025 to 08-11-2025 (Tentative)"]
+    },
+    {
+      "tag": "result_date",
+      "patterns": ["When will results come?", "Result date?", "CIA results", "Internal marks result"],
+      "responses": ["Tentative result publication is scheduled between 05-01-2026 and 10-01-2026."]
+    },
+    {
+      "tag": "ptm_info",
+      "patterns": ["When is the PTM?", "Parents meeting date?", "PTM details", "Teacher meeting for parents"],
+      "responses": ["The Parents Teachers Meeting-1 is on 20-09-2025."]
+    },
+    {
+      "tag": "practical_exam",
+      "patterns": ["When are lab exams?", "When is practical?", "Project viva date?", "Software Engineering lab exam"],
+      "responses": ["Practical exams & preparation holidays are from 10-11-2025 to 22-11-2025."]
+    },
+    {
+      "tag": "semester_exams",
+      "patterns": ["When are final exams?", "End sem exam dates", "Theory exams", "Semester end exams"],
+      "responses": ["Theory Semester End Examinations are from 24-11-2025 to 06-12-2025."]
+    },
+    {
+      "tag": "fees_info",
+      "patterns": ["What is the fee?", "When is fee due?", "College fees", "How to pay fees?"],
+      "responses": ["Please contact the college accounts department for accurate fee details. I can only provide academic-related information."]
+    },
+    {
+      "tag": "attendance_info",
+      "patterns": ["What is my attendance?", "Is attendance compulsory?", "Minimum attendance for exams", "Attendance requirement"],
+      "responses": ["The minimum attendance required is 75% to be eligible for exams. Please contact your class in-charge for your attendance status."]
+    },
+    {
+      "tag": "lab_info",
+      "patterns": ["Who takes FSWD lab?", "AI lab schedule", "Software lab timings"],
+      "responses": ["Lab subjects like SE Lab, AI Lab, and FSWD Lab are usually conducted on Thursdays and Saturdays. Please check your section timetable."]
+    },
+    {
+      "tag": "library",
+      "patterns": ["Library period", "When do we have library?", "Library timing"],
+      "responses": ["Library session is usually scheduled on Tuesday (Section B) and Wednesday (Section C)."]
+    },
+    {
+      "tag": "department_info",
+      "patterns": ["Which department is this?", "CSD full form", "Department name"],
+      "responses": ["This is the Computer Science & Data Science (CSD) department under Lords Institute of Engineering & Technology."]
+    },
+    {
+      "tag": "college_info",
+      "patterns": ["What is the college name?", "College full name", "Where am I studying?"],
+      "responses": ["You are studying at Lords Institute of Engineering & Technology, affiliated with Osmania University, Hyderabad."]
+    },
+    {
+      "tag": "funny",
+      "patterns": ["Tell me a joke", "Say something funny", "Make me laugh", "Any jokes?"],
+      "responses": [
+        "Why did the JavaScript developer leave? Because he didn't get arrays!",
+        "Why don’t scientists trust atoms? Because they make up everything.",
+        "Why was the math book sad? Because it had too many problems."
+      ]
+    },
+    {
+      "tag": "date_period_query",
+      "patterns": [
+        "What's on 29 in 3rd period",
+        "Schedule for period 3 on 29th",
+        "What's happening on twenty-ninth in third period",
+        "Period 3 on 29",
+        "What class is there on 29 in period 3?",
+        "29/08 3rd period",
+        "29-08-2025 period 3",
+        "29th of this month period 3",
+        "What is on 29th in 3rd period?",
+        "Schedule for 29th period III",
+        "Third period on twenty-ninth",
+        "What do we have on the 29th during period 3?",
+        "Tell me about 29th 3rd period",
+        "Period three on august twenty-ninth",
+        "Class schedule for 29th period 3"
+      ],
+      "responses": ["Checking timetable for %date% in period %period%..."]
+    }
+  ]
+}
