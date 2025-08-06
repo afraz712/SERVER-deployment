@@ -1,4 +1,6 @@
 flask
+gunicorn
 torch
 numpy
 nltk
+python-dotenv

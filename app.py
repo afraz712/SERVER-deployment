@@ -4,10 +4,17 @@ import torch
 import json
 import random
 import numpy as np
+import nltk
 from nltk_utils import bag_of_words, tokenize
 from model import NeuralNet
 
 app = Flask(__name__)
+
+# Download NLTK punkt tokenizer if not present
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 
 # Load the trained model
 FILE = "data.pth"  # Use relative path for deployment
